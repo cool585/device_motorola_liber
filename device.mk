@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     WifiResCommon_Sys \
 
 PRODUCT_PACKAGES += \
+    ApertureOverlayLiber \
     CarrierConfig \
     FrameworksResLiber \
     SettingsProviderResLiber \
