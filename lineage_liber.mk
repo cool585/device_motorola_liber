@@ -46,3 +46,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT="liber_retail"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Gapps
+WITH_GMS := true
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+endif
+
+# Crdroid flags
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := false
