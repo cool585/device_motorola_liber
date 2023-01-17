@@ -27,9 +27,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_liber
 PRODUCT_DEVICE := liber
-PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := One Fusion+
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_BRAND := motorola
+PRODUCT_MODEL := motorola one fusion+
+PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -42,7 +42,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Build info
 BUILD_FINGERPRINT := "motorola/liber_retail/liber:11/RPIS31.Q2-42-25-1/19a8e:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=liber_retail \
-    PRIVATE_BUILD_DESC="liber_retail-user 11 RPIS31.Q2-42-25-1 19a8e release-keys"
+    PRIVATE_BUILD_DESC="liber_retail-user 11 RPIS31.Q2-42-25-1 19a8e release-keys" \
+    TARGET_PRODUCT="liber_retail"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
